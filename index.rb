@@ -115,5 +115,6 @@ def request_gist(id, with_etag)
 end
 
 def credentials_defined
-  return ((settings.github["username"].class === "String") and (settings.github["password"].class === "String"))
+  # return ((settings.github["username"].class === "String") and (settings.github["password"].class === "String"))
+  return nil
 end

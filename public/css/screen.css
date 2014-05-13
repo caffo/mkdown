@@ -70,10 +70,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 11, ../../sass/screen.scss */
 body {
-  background: #01222d;
-  color: #d5dee2;
-  font-size: 18px;
-  line-height: 27px;
+  background: #fff;
+  color: #000;
+  font-size: 16px;
+  line-height: 20px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   letter-spacing: -0.01em;
@@ -88,16 +88,17 @@ body {
 
 /* line 25, ../../sass/screen.scss */
 h1, h2, h3, h4, h5, h6, p, body {
-  font-family: 'Whitney SSm A', 'Whitney SSm B', HelveticaNeue, 'Helvetica Neue', HelveticaNeueRoman, HelveticaNeue-Roman, 'Helvetica Neue Roman', Helvetica, Tahoma, Geneva, Arial, sans-serif;
-  font-weight: 400;
+  font-family: "freight-text-pro","freight-sans-pro" Helvetica, Tahoma, Geneva, Arial, sans-serif;
+  font-weight: 100;
   font-style: normal;
   text-ren­der­ing: optimizeLegibility;
 }
 
 /* line 31, ../../sass/screen.scss */
 h1, h2, h3, h4, h5, h6 {
-  color: #fff;
+  color: #000;
   font-weight: 700;
+  font-family: "freight-sans-pro"
 }
 
 /* line 35, ../../sass/screen.scss */
@@ -107,7 +108,7 @@ p + h1, p + h2, p + h3, p + h4, p + h5, p + h6 {
 
 /* line 38, ../../sass/screen.scss */
 h1 {
-  font-size: 28px;
+  font-size: 40px;
   letter-spacing: -0.04em;
   line-height: 32px;
   padding-bottom: 26px;
@@ -117,8 +118,10 @@ h1 {
 h2 {
   font-size: 23px;
   line-height: 26px;
-  padding-bottom: 24px;
+  margin-bottom: 24px;
+  padding-bottom: 10px;
   letter-spacing: -0.04em;
+  /*border-bottom: 1px solid #eee;*/
 }
 
 /* line 50, ../../sass/screen.scss */
@@ -134,7 +137,7 @@ h1, h2 {
 
 /* line 56, ../../sass/screen.scss */
 h3 {
-  font-size: 19px;
+  font-size: 16px;
   line-height: 22px;
   padding-bottom: 22px;
   letter-spacing: -0.03em;
@@ -176,7 +179,7 @@ ol {
 
 /* line 84, ../../sass/screen.scss */
 ul li, ol li {
-  margin: 16px 0;
+  margin: 10px 0;
 }
 
 /* line 87, ../../sass/screen.scss */
@@ -231,8 +234,7 @@ blockquote blockquote {
 
 /* line 122, ../../sass/screen.scss */
 .topbar {
-  background: rgba(123, 198, 220, 0.8);
-  bordre-bottom: rgba(1, 20, 26, 0.8);
+  background: #57AD68;
   height: 5px;
   width: 100%;
   margin: 0 auto;
@@ -240,24 +242,19 @@ blockquote blockquote {
 
 /* line 129, ../../sass/screen.scss */
 a {
-  transition: all 0.4s;
+  color: #57AD68;
 }
-/* line 131, ../../sass/screen.scss */
-a:hover {
-  text-decoration: none;
-  color: #37bcff;
-  text-shadow: 0 0 4px rgba(171, 227, 255, 0.43);
-}
-/* line 136, ../../sass/screen.scss */
-a:active {
-  color: #2db1f3;
+
+a:hover, a:focus {
+    color: #57AD68;
+    text-decoration: underline;
 }
 
 /* line 140, ../../sass/screen.scss */
 hr {
   margin: 30px 0;
   border: 0;
-  border-top: 2px solid #184655;
+  border-top: 2px solid #57AD68;
 }
 
 /* line 145, ../../sass/screen.scss */
@@ -306,19 +303,20 @@ a#original {
   width: 100%;
   display: block;
   margin-top: 112px;
-  text-transform: uppercase;
-  font-weight: 900;
+  /*text-transform: uppercase;*/
+  font-weight: 400;
   letter-spacing: -0.04em;
   font-size: 13px;
-  color: #0F3C4B;
-  border-top: 1px solid #052E3C;
+  color: #57AD68;
+  border-top: 1px dotted #ccc;
   padding-top: 13px;
 }
 /* line 188, ../../sass/screen.scss */
 a#original:hover {
-  text-shadow: none;
-  color: #2a5665;
-  border-top: 1px solid #0d3a49;
+  /*text-shadow: none;*/
+  /*color: #2a5665;*/
+  /*border-top: 1px solid #0d3a49;*/
+  text-decoration: underline;
 }
 
 /* line 194, ../../sass/screen.scss */
