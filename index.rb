@@ -74,7 +74,7 @@ end
 
     json      = JSON.parse(http)
     @html_url = json['html_url']
-    @title    = "Gist #{params[:id]}"
+    @title    = "#{params[:id]}"
     @font_url = settings.hfj["url"] unless !defined?(settings.hfj["url"])
     if (cached)
       @markup = gist.markup
