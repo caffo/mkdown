@@ -12,11 +12,11 @@ configure :development do
   DataMapper.setup(:default, "sqlite3://#{Dir.pwd}/db/mkdown.db")
 end
 
-configure :production do
-  require "dm-postgres-adapter"  
-  DataMapper.setup(:default, ENV['DATABASE_URL'])
-  DataMapper.auto_upgrade!
-end
+#configure :production do
+  #require "dm-postgres-adapter"  
+  #DataMapper.setup(:default, ENV['DATABASE_URL'])
+  #DataMapper.auto_upgrade!
+#end
 
 configure do
   set :scss, {:style => :compact, :debug_info => false}
@@ -35,6 +35,12 @@ class Gist
   property :content,  Text
   property :markup,   Text
   property :etag,     Text
+end
+
+configure :production do
+  require "dm-postgres-adapter"  
+  DataMapper.setup(:default, ENV['DATABASE_URL'])
+  DataMapper.auto_upgrade!
 end
 
 DataMapper.finalize
