@@ -115,9 +115,9 @@ h1 {
 
 /* line 44, ../../sass/screen.scss */
 h2 {
-  font-size: 32px; 
+  font-size: 42px; 
   line-height: 26px;
-  margin-bottom: 24px;
+  margin-bottom: 44px;
   padding-bottom: 10px;
   letter-spacing: -0.04em;
   /*border-bottom: 1px solid #eee;*/
@@ -136,8 +136,8 @@ h1, h2 {
 
 /* line 56, ../../sass/screen.scss */
 h3 {
-  font-size: 30px;
-  line-height: 22px;
+  font-size: 38px;
+  line-height: 32px;
   padding-bottom: 22px;
   letter-spacing: -0.03em;
 }
@@ -272,8 +272,10 @@ pre.prettyprint {
 
 /* line 155, ../../sass/screen.scss */
 pre code, code {
-  color: #dee8e8;
-  background: #184655;
+  color: #000;
+  background: #f3f3f3; 
+  font-size: 18px;
+  line-height:1.8;
 }
 
 /* line 159, ../../sass/screen.scss */
@@ -283,8 +285,6 @@ li a img {
 
 /* line 162, ../../sass/screen.scss */
 code {
-  border: 1px solid #031116;
-  font-size: 15px;
   font-family: Consolas, 'Liberation Mono', Courier, monospace;
   margin: 0 2px;
   padding: 2px 5px 1px;
@@ -323,6 +323,9 @@ a#original:hover {
 strong {
   font-weight: 900;
   color: #dce5eb;
+}
+p , li{
+  line-height:1.5;
 }
 
 @media only screen and (max-device-width: 1024px) {
