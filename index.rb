@@ -59,7 +59,11 @@ end
     # Check to see if this gist has ever been stored in the db
     if (Gist.count(:id => params[:id]) === 0)
       # If it hasn't been stored in the db, request it and store the result
-      http, cached = request_gist(params[:id], false)
+      begin
+        http, cached = request_gist(params[:id], false)
+      rescue
+        redirect '\\'
+      end
       gist = Gist.new
       gist.attributes = {
         :id       => params[:id],
@@ -69,7 +73,11 @@ end
     else
       # If the gist has been stored in the db, check to see if the etag has changed
       http, cached = request_gist(params[:id], true)
-      gist = Gist.get(params[:id])
+      begin
+        gist = Gist.get(params[:id])
+      rescue
+        redirect '/' 
+      end
     end
 
     json      = JSON.parse(http)
