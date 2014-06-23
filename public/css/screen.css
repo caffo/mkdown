@@ -234,7 +234,7 @@ blockquote blockquote {
 
 /* line 122, ../../sass/screen.scss */
 .topbar {
-  background: #57AD68;
+  background: #8F776A;
   height: 5px;
   width: 100%;
   margin: 0 auto;
@@ -242,11 +242,11 @@ blockquote blockquote {
 
 /* line 129, ../../sass/screen.scss */
 a {
-  color: #57AD68;
+  color: #8F776A;
 }
 
 a:hover, a:focus {
-    color: #57AD68;
+    color: #8F776A;
     text-decoration: underline;
 }
 
@@ -254,7 +254,7 @@ a:hover, a:focus {
 hr {
   margin: 30px 0;
   border: 0;
-  border-top: 2px solid #57AD68;
+  border-top: 2px solid #8F776A;
 }
 
 /* line 145, ../../sass/screen.scss */
@@ -307,7 +307,7 @@ a#original {
   font-weight: 400;
   letter-spacing: -0.04em;
   font-size: 13px;
-  color: #57AD68;
+  color: #8F776A;
   border-top: 1px dotted #ccc;
   padding-top: 13px;
 }
