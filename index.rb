@@ -62,7 +62,7 @@ end
       begin
         http, cached = request_gist(params[:id], false)
       rescue
-        redirect '\\'
+        redirect '/'
       end
       gist = Gist.new
       gist.attributes = {

@@ -118,9 +118,10 @@ h2 {
   font-size: 42px; 
   line-height: 40px;
   margin-bottom: 44px;
-  padding-bottom: 10px;
+  padding-bottom: 22px;
   letter-spacing: -0.04em;
-  /*border-bottom: 1px solid #eee;*/
+  border-bottom: 1px solid #eee;
+
 }
 
 /* line 50, ../../sass/screen.scss */
